@@ -1,0 +1,8 @@
+README.md
+setup.py
+ExtendedNumpy/__init__.py
+convenience.egg-info/PKG-INFO
+convenience.egg-info/SOURCES.txt
+convenience.egg-info/dependency_links.txt
+convenience.egg-info/requires.txt
+convenience.egg-info/top_level.txt
