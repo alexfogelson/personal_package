@@ -55,3 +55,9 @@ def zero_print(X, precision = 2, **kwargs):
 
     print(final_output)
 
+def get_batches(X, Y, batch_size):
+    indices = np.random.permutation(len(X))
+
+    while (len(indices) > 0):
+        yield X[indices[:batch_size]], Y[indices[:batch_size]]
+        indices = indices[batch_size:]
