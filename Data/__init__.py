@@ -61,7 +61,6 @@ def TrainTestSplit(X, Y = None, split = .8, **kwargs):
     else:
         return NP_TrainTestBatch(X, Y = Y, split = split)
 
-
 def Batches(X, Y, batch_size):
     indices = np.random.permutation(len(X))
 

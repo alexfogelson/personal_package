@@ -12,4 +12,4 @@ To install this package, from the ```convenience``` directory, run the following
 
 For copy and pasting, to do both:
 
-```python3 -m build; python3 -m pip install dist/convenience-0.0.1.tar.gz```
+```python3 -m build; python3 -m pip install dist/convenience-0.0.2.tar.gz```

@@ -43,6 +43,9 @@ def NumpyToTex(M, precision = 2, force_frac = False, max_denom = 100, upright = 
     '''
     assert len(M.shape) <= 2, "Cannot convert ndarray of dimensionality > 2 into LaTeX."
 
+    if (len(M.shape) == 1):
+        M = M.reshape(-1, 1)
+
     func = lambda x: format_element_(x, precision = precision, force_frac = force_frac, max_denom = max_denom, upright = upright, **kwargs)
 
     row_array = [[func(element) for element in row] for row in M]
