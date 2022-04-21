@@ -1,4 +1,6 @@
 import numpy as np
+import fractions
+
 
 def tabulate(func, hi, low = 0):
     '''
@@ -61,3 +63,6 @@ def get_batches(X, Y, batch_size):
     while (len(indices) > 0):
         yield X[indices[:batch_size]], Y[indices[:batch_size]]
         indices = indices[batch_size:]
+
+def Fraction(M, max_denom = 100):
+    return np.vectorize(lambda s: fractions.Fraction(s).limit_denominator(max_denom))(M)
