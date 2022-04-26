@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 def PlotMetrics(train, validate = None, 
                      clear = True, train_color = 'red', 
                      validate_color = 'blue', train_labels = None, validate_labels = None, 
-                     plot_name = None, folder = None
+                     plot_name = None, folder = "./"
                     ):
-    folder = "/" if folder is None else folder
+    folder = folder if folder[-1] == '/' else folder + '/'
     plot_name = None if plot_name is None else folder + plot_name
     
     if (clear):
