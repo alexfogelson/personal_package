@@ -6,7 +6,7 @@ To build this package, from the ```personal``` directory, run the following:
 
 ```python3 -m build```
 
-To install this package, from the ```convenience``` directory, run the following:
+To install this package, from the ```personal``` directory, run the following:
 
 ```python3 -m pip install dist/personal-0.0.6.tar.gz```
 
