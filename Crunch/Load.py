@@ -1,5 +1,7 @@
 import numpy as np
 from tqdm import tqdm
+import torch
+
 
 def List_TrainTest(X, Y = None, split = .8, verbose = False):
     assert(isinstance(X, list))
@@ -61,10 +63,9 @@ def TrainTestSplit(X, Y = None, split = .8, **kwargs):
     else:
         return NP_TrainTestBatch(X, Y = Y, split = split)
 
-def Batches(X, Y, batch_size):
+def LazyBatches(X, Y, batch_size):
     indices = np.random.permutation(len(X))
 
     while (len(indices) > 0):
         yield X[indices[:batch_size]], Y[indices[:batch_size]]
         indices = indices[batch_size:]
-
