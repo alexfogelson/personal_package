@@ -15,12 +15,12 @@ def PlotMetrics(train, validate = None,
     if (train_labels is not None):
         train_title, train_x, train_y = train_labels
     else:
-        train_title, train_x, train_y = "Train Loss Over Time", "Epochs", "Loss"
+        train_title, train_x, train_y = "", "Epochs", ""
         
     if (validate_labels is not None):
         validate_title, validate_x, validate_y = train_labels
     else:
-        validate_title, validate_x, validate_y = "Validate Loss Over Time", "Epochs", "Loss"
+        validate_title, validate_x, validate_y = "", "Epochs", ""
         
     
     fig, axs = plt.subplots(2 if validate is not None else 1, 1)
