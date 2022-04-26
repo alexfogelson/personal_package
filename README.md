@@ -1,4 +1,4 @@
-# Convenience Package
+# Personal Package
 
 Instructions on how to bundle this package were taken from here: https://opensource.com/article/21/11/packaging-python-setuptools
 
